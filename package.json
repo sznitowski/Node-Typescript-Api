@@ -4,7 +4,7 @@
   "description": "Authentication app",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "tsc && node ./dist/index.js",
     "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
     "build": "tsc"
   },

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import config from "../config/config";
-import User, { IUser } from "../models/user";
+import User, { IUser } from "../models/userAuth.model";
 import jwt from "jsonwebtoken";
 
 //create token
@@ -55,4 +55,4 @@ export const signIn = async (
     return res.status(400).json({
         msg: "The email or password are incorrect"
     });
-};
+}; 
