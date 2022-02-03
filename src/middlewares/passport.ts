@@ -1,4 +1,4 @@
- import User from "../models/userAuth.model";
+import User from "../models/userAuth.model";
 import { Strategy, ExtractJwt, StrategyOptions } from "passport-jwt";
 import config from "../config/config";
 
@@ -17,4 +17,4 @@ export default new Strategy(opts, async (payload, done) => {
   } catch (error) {
     console.log(error);
   }
-}); 
+});
